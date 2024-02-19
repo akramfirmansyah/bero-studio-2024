@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary-main: #E09E00;
+    --primary-background: linear-gradient(112.45deg, #7900E2 -8.97%, #500EA5 107.34%);
+    --secondary-main: #57209D;
+}
+
+.jumbotron {
+    background: var(--primary-background);
+}
+
+.navbar__bg-home {
+    background: linear-gradient(268.95deg, #7900E2 9.98%, rgba(121, 0, 226, 0) 81.43%);
+}
