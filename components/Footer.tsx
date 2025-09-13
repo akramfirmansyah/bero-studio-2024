@@ -34,7 +34,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="relative bg-gradient-to-bl from-[#7900E2] to-[#500EA5] p-8 text-white"
+      className="relative bg-linear-to-bl from-[#7900E2] to-[#500EA5] p-8 text-white"
     >
       <Image src={SupergrafisUngu} alt="Supergrafis Footer" fill />
       <div className="relative flex flex-col gap-6">
