@@ -2,10 +2,8 @@
 
 @theme {
   --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
-  --background-image-gradient-conic: conic-gradient(
-    from 180deg at 50% 50%,
-    var(--tw-gradient-stops)
-  );
+  --background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%,
+      var(--tw-gradient-stops));
 
   --color-primary-main: var(--primary-main);
   --color-primary-background: var(--primary-background);
@@ -21,6 +19,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -31,15 +30,34 @@
 }
 
 :root {
-    --primary-main: #E09E00;
-    --primary-background: linear-gradient(112.45deg, #7900E2 -8.97%, #500EA5 107.34%);
-    --secondary-main: #57209D;
+  --primary-main: #E09E00;
+  --primary-background: linear-gradient(112.45deg, #7900E2 -8.97%, #500EA5 107.34%);
+  --secondary-main: #57209D;
 }
 
-.jumbotron {
+@layer utilities {
+  .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  h2.heading__home {
+    @apply text-left pb-4 mb-4 border-b border-black text-3xl text-secondary-main md:text-4xl;
+  }
+
+  h2.heading__home span {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .jumbotron {
     background: var(--primary-background);
-}
+  }
 
-.navbar__bg-home {
+  .navbar__bg-home {
     background: linear-gradient(268.95deg, #7900E2 9.98%, rgba(121, 0, 226, 0) 81.43%);
+  }
 }

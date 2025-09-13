@@ -34,19 +34,19 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="bg-linear-to-bl relative from-[#7900E2] to-[#500EA5] p-8 text-white"
+      className="bg-linear-to-bl relative from-[#7900E2] to-[#500EA5] py-8 text-white"
     >
       <Image src={SupergrafisUngu} alt="Supergrafis Footer" fill />
-      <div className="relative flex flex-col gap-6">
-        <div className="flex items-end justify-between">
+      <div className="container relative flex flex-col gap-6">
+        <div className="flex flex-col items-center justify-start gap-6 md:flex-row md:items-end md:justify-between">
           <Image src={Logo} alt="Logo Footer" height={80} />
           <span className="text-xl font-medium">
             PT. Beroperasi Sepenuh Hati
           </span>
         </div>
         <hr />
-        <div className="flex justify-between">
-          <div className="flex flex-col gap-3">
+        <div className="flex flex-col flex-wrap justify-start gap-8 md:flex-row md:justify-between">
+          <div className="flex grow flex-col gap-3">
             <h3 className="text-xl font-extrabold">Bero Setudio</h3>
             <hr />
             <div className="flex gap-4">
