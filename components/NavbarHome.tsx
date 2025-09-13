@@ -1,7 +1,7 @@
-import LogoWhite from "@/public/images/logo_white.svg";
 import Image from "next/image";
 import Link from "next/link";
-import type { itemsInterface } from "@/utils/Interface";
+import LogoWhite from "public/images/logo_white.svg";
+import type { itemsInterface } from "utils/Interface";
 
 const items: itemsInterface[] = [
   {

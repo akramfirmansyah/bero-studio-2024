@@ -1,8 +1,8 @@
-import Footer from "@/components/Footer";
-import NavbarHome from "@/components/NavbarHome";
-import SupergrafisKuning from "@/public/images/supergrafis_kuning.svg";
-import SupergrafisUngu from "@/public/images/supergrafis_ungu.svg";
+import Footer from "components/Footer";
+import NavbarHome from "components/NavbarHome";
 import Image from "next/image";
+import SupergrafisKuning from "public/images/supergrafis_kuning.svg";
+import SupergrafisUngu from "public/images/supergrafis_ungu.svg";
 
 export default function Home() {
   return (

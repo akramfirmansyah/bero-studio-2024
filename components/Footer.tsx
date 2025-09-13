@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MdMail, MdCall } from "react-icons/md";
-import type { itemsInterface } from "@/utils/Interface";
+import { MdCall, MdMail } from "react-icons/md";
+import type { itemsInterface } from "utils/Interface";
 
-import Logo from "@/public/images/logo_footer.svg";
-import SupergrafisUngu from "@/public/images/supergrafis_ungu_footer.svg";
+import Logo from "public/images/logo_footer.svg";
+import SupergrafisUngu from "public/images/supergrafis_ungu_footer.svg";
 
 const items: itemsInterface[] = [
   {
@@ -34,7 +34,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="relative bg-linear-to-bl from-[#7900E2] to-[#500EA5] p-8 text-white"
+      className="bg-linear-to-bl relative from-[#7900E2] to-[#500EA5] p-8 text-white"
     >
       <Image src={SupergrafisUngu} alt="Supergrafis Footer" fill />
       <div className="relative flex flex-col gap-6">
